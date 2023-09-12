@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LED Control</title>
+</head>
+<style>
+    .toggle-button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    }
 
+    .toggle-button:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .active {
+        background-color: #4CAF50; /* Green color when button is active */
+        color: #fff; /* Text color when button is active */
+    }
+</style>
+<body>
+  <h1>LED Control</h1>
+  
+  <div>
+    <p id="ledStatus1">LED 1 status will be displayed here.</p>
+    <button id="toggleButton1">Toggle LED 1</button>
+  </div>
+  
+  <div>
+    <p id="ledStatus2">LED 2 status will be displayed here.</p>
+    <button id="toggleButton2">Toggle LED 2</button>
+  </div>
+  
+  <div>
+    <p id="ledStatus3">LED 3 status will be displayed here.</p>
+    <button id="toggleButton3">Toggle LED 3</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
